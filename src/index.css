@@ -1,0 +1,78 @@
+/* *{
+  margin:0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f5f3;
+}
+
+#SelectionWindscreenWipersContent{
+  
+      width: 350px;
+      height: 70vh;
+      margin-top: 10vh;
+  
+}
+
+.Name {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 600;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-column-gap: 5px;
+}
+.Name p:nth-child(2n+2){
+  color: red;
+}
+.Name p:nth-child(2n+3){
+  font-weight: 100;
+}
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  margin-top: 5px;
+}
+.AutoBrandContent {
+  margin-top: 45px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.AutoBrandContent div{
+  margin-top: 5px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contentAutoModel{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(5,min-content);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.autoGenerationContent{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  margin-top: 50px;
+  grid-row-gap: 10px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contentWiperBlades {
+  display: flex;
+  flex-direction: column;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 45px;
+}
+.contentWiperBlades p {
+  margin-top: 5px;
+}
+
+
+
+
+ */
