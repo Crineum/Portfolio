@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+   } 
+
+.Content{
+    width: 99vw;
+    border-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ContentV2{
+    width: 99vw;
+    border-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Content .nav{
+    width: 50vw;
+}
+.Content .post{
+    grid-template-columns: repeat(3,max-content);
+}
+.ContentV2 .nav{
+    width: 30vw;
+}
+.ContentV2 .post{
+    grid-template-columns: repeat(2,max-content);
+}
+
+.nav{
+    
+    height: 40px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav p {
+    font-size: 22pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-weight: 400;
+}
+
+.blockCnop button{
+    width: max-content;
+    height: 35px;
+    background-color: #007cff;
+    border-radius: 5px;
+    margin-right: 10px;
+    border-color: #007cff;
+    
+}
+.blockCnop button p{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12pt;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.post{
+    margin-top: 10px;
+    display: grid;
+    
+    grid-row-gap: 10px;
+    grid-column-gap: 50px;
+}
+.postContent{
+    width: 350px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ColorLightTelegrey{
+    background-color: #cccccc;
+    color: black;
+}
+.ColorLightMallow{
+    background-color: #dbcfff;
+    color: #0c791e;
+}
+.ColorLemonYellow{
+    background-color: #e9e156;
+    color: rgb(61, 140, 166);
+}
+.m_p_10{
+    margin-left: 20px;
+}
+.postContentTitle{
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 24pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.postContentBody{
+    width: 300px;
+    height: 75px;
+    margin-top: 5px;
+    /* background-color: #007cff; */
+    font-size: 15pt;
+    font-weight: 100;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.postContentCnop{
+    width: 160px;
+    height: 32px;
+    margin-top: 10px;
+    background-color: #007bff00;
+    /* border: solid 1px black; 
+    border-radius: 5px; */
+}
+.postContentCnopView{
+    width: 50px;
+    height: 32px;
+    border-radius: 5px 0px 0px 5px;
+    border: solid 1px #75767a;
+    background-color: #007bff00;
+    color: #75767a;
+    /* opacity: 0;
+    transform: all 08s ease 0s; */
+}
+.postContentCnopView:hover{
+    background-color: #007bffbb;
+    color: white;
+}
+.postContentCnopChaCol{
+    width: 110px;
+    height: 32px;
+    border-radius: 0px 5px 5px 0px;
+    border: solid 1px #75767a;
+    border-left-style: none;
+    background-color: #40ffa000;
+    color: #75767a;
+}
+.postContentCnopChaCol:hover{
+    background-color: #007bffbb;
+    color: white;
+}
+.View {
+    position: fixed;
+    width: 100vw;
+    height: 100vh; 
+    top: 0%;
+    left: 0%;
+    background-color: rgba(69, 69, 69, 0.455);   
+}
+
+.ViewComtent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    min-height: 200px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+.ViewComtentHeight{
+    height:320px
+}
+.ViewTitle{
+    width: 500px;
+    height: 75px;
+    border-bottom-width: 1px; 
+    border-bottom-style: solid; 
+    border-bottom-color: #75767a46;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.ViewTitle p{
+    font-size: 15pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000;
+    margin-left: 15px;
+}
+.cross{
+    width: 15px;
+    height: 15px;
+    background-color: #75767a;
+    margin-right: 15px;
+    cursor: pointer;
+    clip-path: polygon(15.1% 4%, 4.3% 15.8%, 37.7% 49.8%, 4.5% 83%, 17.6% 95.8%, 50% 62.3%, 84.4% 96%, 95.7% 83.3%, 63.6% 49%, 94% 16%, 83.7% 4.3%, 50.8% 38.3%);    
+}
+.ViewDelete{
+    margin-left: 60%;
+    margin-bottom: 15px;
+}
+
+.ViewBody {
+    width: 480px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.ViewBodyTitle{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20pt;
+}
+.ViewBodyContent{
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13pt;
+    font-weight: 100;
+}
+.ViewBody label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+.ViewBody label p{
+    width: 48px;
+    margin-right: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15pt;
+}
+.ViewBody label input{
+    width: 200px;
+    height: 30px;
+    border-radius: 4px;
+    border: solid 1px #75767af8;
+    background-color: #75767a16;
+}
+.ViewBodyTextaria{
+    width: 400px;
+    height: 100px;
+    resize : none;
+    border: solid 1px #75767af8;
+    background-color: #75767a16;
+}
+.ViewBodyCnop{
+    width: max-content;
+    height: 30px;
+    border: solid 1px #75767af8;
+    border-radius: 5px;
+    background-color: #007bffba;
+    margin-top: 10px;
+    margin-left: 75%;
+    cursor: pointer;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.ViewBodyCnop:hover {
+    background-color: #0055b0;
+}
+.ViewBodyCnop p{
+    margin-left: 10px;
+    margin-right: 10px;
+    user-select: none;
+    color: white;
+    font-size: 13pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.CnopMore{
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #007bff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.CnopMore p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17pt;
+    color: white;
+    user-select: none;
+}
+footer{
+    width: 90vw;
+    height: 40px;
+}

@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.HomeLink{
+    width: 100vw;
+    height: 100vh;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.HomeLink h1{
+    font-size: 40pt;
+    margin-top: 20vh;
+}
+.HomeLink p{
+    width: 700px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 3vh;
+    line-height: 2;
+}
+.HomeLink a{
+    text-decoration: none;
+}
+.HomeLink button{
+    width: 300px;
+    height: 50px;
+    background-color: #2561fa;
+    border: none;
+    border-radius: 50px;
+    margin-top: 5vh;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12pt;
+    font-weight: 600;
+}
+.HomeLink button:hover{
+    border: solid 1px white;
+}

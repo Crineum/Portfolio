@@ -1,0 +1,19 @@
+header{
+  width: 99vw;
+  height: 40px;
+  background-color: #353a40;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+}
+header a {
+  margin-left: 10px;
+  cursor: pointer;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  text-decoration: none;
+}
+header a:hover {
+  color: rgb(189, 189, 189);
+}
