@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    background-color: #962727;
+    display: flex;
+    align-items: center;
+
+    p {
+        margin-left: 40px;
+        font-size: 35pt;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        display: flex;
+        align-items: center;
+
+        span {
+            margin-top: 5px;
+            margin-left: 15px;
+            font-size: 15pt;
+        }
+    }
+}
+
+
+
+.Content {
+    display: flex;
+    flex-direction: row;
+
+
+    .Menu {
+        width: 12vw;
+        height: 90vh;
+        background-color: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .menuContent {
+            width: 10vw;
+            height: 500px;
+            margin-top: 5vh;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            user-select: none;
+
+
+
+            .title {
+                font-size: 20pt;
+                margin-right: 60%;
+            }
+
+            .menu_items {
+                margin-top: 10px;
+
+                div {
+                    width: 100%;
+                    height: 40px;
+                    // background-color: #962727;
+                    margin-top: 2px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    label {
+                        cursor: pointer;
+                    }
+
+                    p {
+                        font-size: 16pt;
+                    }
+
+                    .custom-checkbox {
+
+                        input {
+                            position: absolute;
+                            z-index: -1;
+                            opacity: 0;
+                        }
+
+                        /* для элемента label, связанного с .custom-checkbox */
+                        span {
+                            display: inline-flex;
+                            align-items: center;
+                            user-select: none;
+                        }
+
+                        /* создание в label псевдоэлемента before со следующими стилями */
+                        span::before {
+                            content: '';
+                            display: inline-block;
+                            width: 1.3em;
+                            height: 1.3em;
+                            flex-shrink: 0;
+                            flex-grow: 0;
+                            border: 1px solid #adb5bd;
+                            border-radius: 0.90em;
+                            margin-right: 0.5em;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: 50% 50%;
+                            background-color: #c5c5c5;
+                        }
+
+                        /* стили при наведении курсора на checkbox */
+                        input:not(:disabled):not(:checked)+span:hover::before {
+                            border-color: #962727aa;
+                        }
+
+                        /* стили для чекбокса, находящегося в состоянии checked */
+                        input:checked+span::before {
+                            border-color: #962727;
+                            background-color: #962727;
+                        }
+
+                        /* стили для чекбокса, находящегося в состоянии disabled */
+                        input:disabled+span::before {
+                            background-color: #adb5bd;
+                        }
+
+                    }
+
+
+                }
+            }
+
+            .Cnop_new_items {
+                width: 150px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #962727;
+                margin-top: 15px;
+                border-radius: 10px;
+                cursor: pointer;
+
+                .cross {
+                    width: 30px;
+                    height: 30px;
+                    background-color: #fff;
+                    color: white;
+                    clip-path: polygon(32.2% 0%, 66.6% 0%, 66.6% 33%, 100% 33%, 100% 66.3%, 66.6% 66.3%, 66.6% 100%, 32.2% 100%, 32.2% 66.3%, 0% 66.3%, 0% 33%, 32.2% 33%);
+                }
+            }
+        }
+
+        .name_items {
+            width: 100vw;
+            height: 100vh;
+            background-color: #96969674;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .name_items_Content {
+                width: 300px;
+                height: 100px;
+                background-color: #f4f4f4;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                input {
+                    width: 250px;
+                    padding: 3px;
+                    border-width: 2px;
+                    border-color: #cccccc;
+                    font-size: 17px;
+                    border-radius: 8px;
+                    border-style: double;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    margin-top: 10px;
+
+                    &:focus {
+                        outline: none;
+                        border-color: #979595;
+                    }
+                }
+
+                .name_items_BlockCnop {
+                    width: 80%;
+                    display: flex;
+                    flex-flow: row wrap;
+
+                    p {
+                        color: #00c6ff;
+                        padding: 1px 10px;
+                        width: 50px;
+                        text-decoration: none;
+                        text-align: center;
+                        margin: 20px auto;
+                        display: block;
+                        background-image: linear-gradient(to left, transparent, transparent 50%, #00c6ff 50%, #00c6ff);
+                        background-position: 100% 0;
+                        background-size: 200% 100%;
+                        transition: all .25s ease-in;
+                        font: 400 18px tahoma;
+                        border: 1px solid #00C6FF;
+                        user-select: none;
+
+                        &:hover {
+                            cursor: pointer;
+                            background-position: 0 0;
+                            color: #fff;
+                        }
+
+                    }
+
+
+                }
+            }
+
+
+        }
+
+    }
+
+
+    .Content {
+        width: 85vw;
+        height: 85vh;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        margin: 5vh 0 0 3vw;
+
+
+        .title {
+            font-size: 20pt;
+            margin-right: 60%;
+        }
+
+        .Content_record {
+            user-select: none;
+            margin-top: 20px;
+            margin-left: 1vw;
+
+            .inactive {
+                color: #adb5bd;
+                pointer-events: none;
+            }
+
+            div {
+                display: flex;
+                flex-direction: row;
+                margin-top: 10px;
+
+
+                .strikethrough_text {
+                    text-decoration: line-through;
+                }
+
+                p {
+                    font-size: 17pt;
+                }
+
+                label {
+                    cursor: pointer;
+                }
+
+                .custom-checkbox {
+
+                    input {
+                        position: absolute;
+                        z-index: -1;
+                        opacity: 0;
+                    }
+
+                    /* для элемента label, связанного с .custom-checkbox */
+                    span {
+                        display: inline-flex;
+                        align-items: center;
+                        user-select: none;
+                    }
+
+                    /* создание в label псевдоэлемента before со следующими стилями */
+                    span::before {
+                        content: '';
+                        display: inline-block;
+                        width: 1.3em;
+                        height: 1.3em;
+                        flex-shrink: 0;
+                        flex-grow: 0;
+                        border: 1px solid #adb5bd;
+                        margin-right: 0.5em;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: 50% 50%;
+                        background-color: #c5c5c5;
+                    }
+
+                    /* стили при наведении курсора на checkbox */
+                    input:not(:disabled):not(:checked)+span:hover::before {
+                        border-color: #962727aa;
+                    }
+
+                    /* стили для чекбокса, находящегося в состоянии checked */
+                    input:checked+span::before {
+                        border-color: #962727;
+                        background-color: #962727;
+                    }
+
+                    /* стили для чекбокса, находящегося в состоянии disabled */
+                    input:disabled+span::before {
+                        background-color: #adb5bd;
+                    }
+
+                }
+
+            }
+
+
+
+        }
+
+        .Cnop_new_record {
+            width: max-content;
+            height: max-content;
+            margin-top: 15px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            user-select: none;
+            cursor: pointer;
+
+            .contentCross {
+                width: 20px;
+                height: 20px;
+                background-color: #adb5bd;
+                clip-path: polygon(43.4% 0.3%, 52.9% 0.5%, 54.1% 41%, 100% 41.3%, 99.8% 55.3%, 53.6% 55.5%, 53.4% 99.8%, 42.4% 100%, 42.6% 56%, 0.7% 55.8%, 0% 42.8%, 42.9% 42%);
+            }
+
+            p {
+                font-size: 14pt;
+                color: #afafaf;
+                margin-left: 10px;
+            }
+
+            // background-color: #962727;
+        }
+
+        .name_record {
+            width: 100vw;
+            height: 100vh;
+            background-color: #96969674;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .name_record_Content {
+                width: 300px;
+                height: 100px;
+                background-color: #f4f4f4;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                input {
+                    width: 250px;
+                    padding: 3px;
+                    border-width: 2px;
+                    border-color: #cccccc;
+                    font-size: 17px;
+                    border-radius: 8px;
+                    border-style: double;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    margin-top: 10px;
+
+                    &:focus {
+                        outline: none;
+                        border-color: #979595;
+                    }
+                }
+
+                .name_record_BlockCnop {
+                    width: 80%;
+                    display: flex;
+                    flex-flow: row wrap;
+
+                    p {
+                        color: #00c6ff;
+                        padding: 1px 10px;
+                        width: 50px;
+                        text-decoration: none;
+                        text-align: center;
+                        margin: 20px auto;
+                        display: block;
+                        background-image: linear-gradient(to left, transparent, transparent 50%, #00c6ff 50%, #00c6ff);
+                        background-position: 100% 0;
+                        background-size: 200% 100%;
+                        transition: all .25s ease-in;
+                        font: 400 18px tahoma;
+                        border: 1px solid #00C6FF;
+                        user-select: none;
+
+                        &:hover {
+                            cursor: pointer;
+                            background-position: 0 0;
+                            color: #fff;
+                        }
+
+                    }
+
+
+                }
+            }
+
+
+        }
+    }
+
+
+}

@@ -1,0 +1,110 @@
+{
+  "name": [
+    {
+      "id": 1,
+      "Name": "Задача 1"
+    },
+    {
+      "id": 2,
+      "Name": "Задача 2"
+    },
+    {
+      "id": 3,
+      "Name": "Задача 3"
+    },
+    {
+      "id": 4,
+      "Name": "Задача 4"
+    }
+  ],
+  "media": [
+    {
+      "Name": "Задача 1",
+      "id": 1,
+      "Subtasks": [
+        {
+          "Name": "Подзадача 1",
+          "Through": 0
+        },
+        {
+          "Name": "Подзадача 2",
+          "Through": 0
+        },
+        {
+          "Name": "Подзадача 3",
+          "Through": 0
+        }
+      ]
+    },
+    {
+      "Name": "Задача 2",
+      "id": 2,
+      "Subtasks": [
+        {
+          "Name": "Подзадача 1",
+          "Through": 0
+        },
+        {
+          "Name": "Подзадача 2",
+          "Through": 0
+        },
+        {
+          "Name": "Подзадача 3",
+          "Through": 0
+        },
+        {
+          "Name": "Подзадача 4",
+          "Through": 0
+        },
+        {
+          "Name": "Подзадача 5",
+          "Through": 0
+        },
+        {
+          "Name": "Подзадача 6",
+          "Through": 0
+        }
+      ]
+    },
+    {
+      "Name": "Задача 3",
+      "id": 3,
+      "Subtasks": []
+    },
+    {
+      "Name": "Задача 4",
+      "id": 4,
+      "Subtasks": [
+        {
+          "Name": "Подзадача 1",
+          "Through": 0
+        }
+      ]
+    },
+    {
+      "Name": "fsdfesdf",
+      "Subtasks": [],
+      "id": 5
+    },
+    {
+      "Name": "fsdfesdf",
+      "Subtasks": [],
+      "id": 6
+    },
+    {
+      "Name": "fsdfesdf324",
+      "Subtasks": [],
+      "id": 7
+    },
+    {
+      "Name": "fsdfesdf324",
+      "Subtasks": [],
+      "id": 8
+    },
+    {
+      "Name": "2345",
+      "Subtasks": [],
+      "id": 9
+    }
+  ]
+}
